@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kelvin Kwesi Danquah | Digital Communications & B2B Growth Strategist</title>
+<meta name="description" content="Kelvin Kwesi Danquah — Digital Communications & B2B Growth Strategist. Helping CEOs and businesses across Africa and beyond build powerful digital brands, generate B2B leads, and grow revenue.">
+<meta name="keywords" content="Digital Marketing Ghana, B2B Growth Strategist, Digital Communications, LinkedIn Growth, Lead Generation Africa">
+<meta property="og:title" content="Kelvin Kwesi Danquah | B2B Growth Strategist">
+<meta property="og:description" content="Driving B2B Growth in Africa & Beyond. Consulting, Training, Digital Products.">
+<meta property="og:url" content="https://www.kelvinkwesidanquah.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0B1F3A;
+  --navy-2: #1A3A5C;
+  --gold: #C9A84C;
+  --gold-light: #F0E6C8;
+  --gold-pale: #FAF5E8;
+  --ivory: #F5F5F0;
+  --steel: #2E86AB;
+  --white: #FFFFFF;
+  --dark: #1A1A2E;
+  --mid: #6B7280;
+  --light: #F2F2F0;
+  --border: rgba(201,168,76,0.2);
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+  --shadow: 0 4px 32px rgba(11,31,58,0.12);
+  --shadow-gold: 0 8px 40px rgba(201,168,76,0.15);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--dark);
+  background: var(--white);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ── TYPOGRAPHY ─────────────────────────────────────────── */
+h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 600; line-height: 1.15; }
+h1 { font-size: clamp(2.8rem, 6vw, 5.5rem); }
+h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
+h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
+h4 { font-size: 1.1rem; }
+p { font-size: 1rem; color: var(--mid); line-height: 1.8; }
+a { text-decoration: none; color: inherit; }
+
+.gold { color: var(--gold); }
+.navy { color: var(--navy); }
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+}
+
+/* ── LAYOUT ─────────────────────────────────────────────── */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+.section { padding: 7rem 0; }
+.section-sm { padding: 4rem 0; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; }
+.grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.5rem; }
+
+/* ── BUTTONS ─────────────────────────────────────────────── */
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.85rem 2rem; border-radius: 2px;
+  font-family: var(--font-body); font-size: 0.9rem; font-weight: 500;
+  cursor: pointer; transition: var(--transition); letter-spacing: 0.02em;
+  border: none;
+}
+.btn-primary {
+  background: var(--gold); color: var(--navy);
+}
+.btn-primary:hover { background: #b8973e; transform: translateY(-2px); box-shadow: var(--shadow-gold); }
+.btn-outline {
+  background: transparent; color: var(--white);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+.btn-dark {
+  background: var(--navy); color: var(--white);
+}
+.btn-dark:hover { background: var(--navy-2); transform: translateY(-2px); }
+.btn-gold-outline {
+  background: transparent; color: var(--gold);
+  border: 1px solid var(--gold);
+}
+.btn-gold-outline:hover { background: var(--gold); color: var(--navy); }
+
+/* ── NAV ─────────────────────────────────────────────────── */
+nav {
+  position: fixed; top: 0; width: 100%; z-index: 1000;
+  background: rgba(11,31,58,0.96); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transition: var(--transition);
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.2rem 2rem; max-width: 1200px; margin: 0 auto;
+}
+.nav-logo {
+  font-family: var(--font-display); font-size: 1.4rem; font-weight: 700;
+  color: var(--white); letter-spacing: 0.02em;
+}
+.nav-logo span { color: var(--gold); }
+.nav-links { display: flex; align-items: center; gap: 2.5rem; list-style: none; }
+.nav-links a {
+  font-size: 0.85rem; font-weight: 500; color: rgba(255,255,255,0.75);
+  letter-spacing: 0.06em; text-transform: uppercase;
+  transition: var(--transition); position: relative;
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: -4px; left: 0;
+  width: 0; height: 1px; background: var(--gold);
+  transition: var(--transition);
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+.nav-cta { margin-left: 1rem; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+.hamburger span { width: 24px; height: 1.5px; background: var(--white); transition: var(--transition); display: block; }
+
+/* ── HERO ─────────────────────────────────────────────────── */
+#home {
+  min-height: 100vh;
+  background: var(--navy);
+  display: flex; align-items: center;
+  position: relative; overflow: hidden; padding-top: 5rem;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 80% 50%, rgba(26,58,92,0.6) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 20% 80%, rgba(201,168,76,0.08) 0%, transparent 60%);
+}
+.hero-grid {
+  position: absolute; inset: 0; opacity: 0.04;
+  background-image: linear-gradient(var(--gold) 1px, transparent 1px),
+    linear-gradient(90deg, var(--gold) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.hero-content { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; min-height: 90vh; }
+.hero-left { padding: 4rem 0; }
+.hero-eyebrow { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+.hero-eyebrow-line { width: 40px; height: 1px; background: var(--gold); }
+.hero-name { color: var(--white); margin-bottom: 0.5rem; }
+.hero-name em { color: var(--gold); font-style: italic; }
+.hero-role {
+  font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.5); text-transform: uppercase; margin-bottom: 2rem;
+  padding-bottom: 2rem; border-bottom: 1px solid var(--border);
+}
+.hero-tagline {
+  font-family: var(--font-display); font-size: clamp(1.2rem,2.5vw,1.7rem);
+  color: var(--gold); font-style: italic; margin-bottom: 1.5rem;
+}
+.hero-desc { color: rgba(255,255,255,0.65); font-size: 1rem; margin-bottom: 2.5rem; max-width: 480px; }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
+.hero-stats { display: flex; gap: 2.5rem; }
+.hero-stat { }
+.hero-stat-num { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--gold); line-height: 1; }
+.hero-stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.45); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 0.25rem; }
+.hero-right { display: flex; flex-direction: column; gap: 1.5rem; }
+.hero-card {
+  background: rgba(255,255,255,0.04); border: 1px solid var(--border);
+  border-radius: 4px; padding: 2rem;
+  backdrop-filter: blur(8px);
+  animation: fadeUp 0.8s ease both;
+}
+.hero-card:nth-child(2) { animation-delay: 0.1s; margin-left: 2rem; }
+.hero-card:nth-child(3) { animation-delay: 0.2s; }
+.hero-card-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+.hero-card h4 { color: var(--white); font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.4rem; }
+.hero-card p { color: rgba(255,255,255,0.5); font-size: 0.88rem; }
+.hero-scroll {
+  position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+  color: rgba(255,255,255,0.3); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+  animation: bounce 2s infinite;
+}
+.scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, var(--gold), transparent); }
+
+/* ── MARQUEE ─────────────────────────────────────────────── */
+.marquee-section {
+  background: var(--gold); padding: 1rem 0; overflow: hidden;
+}
+.marquee-track {
+  display: flex; gap: 4rem; animation: marquee 20s linear infinite;
+  white-space: nowrap;
+}
+.marquee-item {
+  font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--navy); font-weight: 500;
+  display: flex; align-items: center; gap: 1rem; flex-shrink: 0;
+}
+.marquee-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--navy); opacity: 0.4; }
+
+/* ── ABOUT ─────────────────────────────────────────────────── */
+#about { background: var(--ivory); }
+.about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 6rem; align-items: start; }
+.about-visual {
+  position: relative;
+}
+.about-img-frame {
+  background: var(--navy); border-radius: 4px;
+  aspect-ratio: 4/5; display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.about-img-placeholder {
+  display: flex; flex-direction: column; align-items: center; gap: 1rem;
+}
+.about-monogram {
+  font-family: var(--font-display); font-size: 6rem; font-weight: 700;
+  color: var(--gold); line-height: 1;
+}
+.about-img-label {
+  font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.3); text-transform: uppercase;
+}
+.about-badge {
+  position: absolute; bottom: -1.5rem; right: -1.5rem;
+  background: var(--gold); color: var(--navy);
+  padding: 1.2rem 1.5rem; border-radius: 4px; text-align: center;
+}
+.about-badge-num { font-family: var(--font-display); font-size: 2rem; font-weight: 700; line-height: 1; }
+.about-badge-text { font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; margin-top: 0.2rem; }
+.about-content { padding-top: 1rem; }
+.about-intro { font-family: var(--font-display); font-size: 1.3rem; color: var(--navy); margin-bottom: 1.5rem; line-height: 1.5; }
+.about-text { margin-bottom: 1.5rem; }
+.about-values { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0; }
+.about-value {
+  padding: 1.2rem; border: 1px solid var(--border);
+  border-left: 3px solid var(--gold); background: var(--white);
+}
+.about-value h4 { font-family: var(--font-display); color: var(--navy); margin-bottom: 0.3rem; }
+.about-value p { font-size: 0.85rem; }
+.credentials { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 2rem; }
+.credential {
+  display: flex; align-items: center; gap: 1rem;
+  padding: 0.85rem 1.2rem; background: var(--white);
+  border: 1px solid rgba(201,168,76,0.15); border-radius: 2px;
+}
+.credential-icon { width: 36px; height: 36px; border-radius: 50%; background: var(--navy); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem; }
+.credential-text h4 { font-size: 0.9rem; color: var(--navy); font-family: var(--font-body); font-weight: 600; }
+.credential-text p { font-size: 0.78rem; margin-top: 0.1rem; }
+
+/* ── CLIENTS STRIP ──────────────────────────────────────── */
+.clients-section { background: var(--white); padding: 4rem 0; border-top: 1px solid rgba(0,0,0,0.06); border-bottom: 1px solid rgba(0,0,0,0.06); }
+.clients-label { text-align: center; margin-bottom: 2.5rem; }
+.clients-grid {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  align-items: center; gap: 1rem;
+}
+.client-pill {
+  padding: 0.7rem 1.5rem; border: 1px solid rgba(11,31,58,0.12);
+  border-radius: 100px; font-family: var(--font-mono); font-size: 0.78rem;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--navy-2);
+  background: var(--ivory); font-weight: 500;
+  transition: var(--transition);
+}
+.client-pill:hover { border-color: var(--gold); color: var(--gold); background: var(--gold-pale); }
+
+/* ── SERVICES ────────────────────────────────────────────── */
+#services { background: var(--navy); }
+.services-header { text-align: center; margin-bottom: 5rem; }
+.services-header h2 { color: var(--white); margin-bottom: 1rem; }
+.services-header p { color: rgba(255,255,255,0.55); max-width: 540px; margin: 0 auto; }
+.service-tiers { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5px; background: var(--border); }
+.service-tier {
+  background: rgba(255,255,255,0.03); padding: 3rem 2.5rem;
+  border-top: 3px solid transparent; transition: var(--transition);
+  position: relative; overflow: hidden;
+}
+.service-tier::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+}
+.tier-1::before { background: var(--steel); }
+.tier-2::before { background: var(--gold); }
+.tier-3::before { background: linear-gradient(90deg, var(--gold), var(--steel)); }
+.service-tier:hover { background: rgba(255,255,255,0.06); }
+.tier-badge {
+  display: inline-block; padding: 0.3rem 0.8rem;
+  font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.12em;
+  text-transform: uppercase; border-radius: 2px; margin-bottom: 1.5rem;
+}
+.tier-1 .tier-badge { background: rgba(46,134,171,0.2); color: var(--steel); }
+.tier-2 .tier-badge { background: rgba(201,168,76,0.2); color: var(--gold); }
+.tier-3 .tier-badge { background: rgba(201,168,76,0.15); color: var(--gold); }
+.service-tier h3 { color: var(--white); margin-bottom: 0.75rem; font-size: 1.4rem; }
+.service-tier .tier-desc { color: rgba(255,255,255,0.45); font-size: 0.88rem; margin-bottom: 2rem; }
+.service-list { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 2.5rem; }
+.service-list li {
+  display: flex; align-items: flex-start; gap: 0.75rem;
+  font-size: 0.88rem; color: rgba(255,255,255,0.7);
+}
+.service-list li::before {
+  content: '▸'; color: var(--gold); flex-shrink: 0; margin-top: 0.1rem;
+}
+.tier-price {
+  font-family: var(--font-display); font-size: 1rem; color: rgba(255,255,255,0.3);
+  margin-top: auto; padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.tier-price strong { color: var(--gold); font-size: 1.3rem; }
+
+/* ── STATS BAND ──────────────────────────────────────────── */
+.stats-band { background: var(--gold); padding: 5rem 0; }
+.stats-inner { display: grid; grid-template-columns: repeat(4,1fr); gap: 2rem; text-align: center; }
+.stat-item {}
+.stat-num { font-family: var(--font-display); font-size: clamp(2.5rem,4vw,4rem); font-weight: 700; color: var(--navy); line-height: 1; }
+.stat-label { font-size: 0.8rem; color: rgba(11,31,58,0.65); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 0.5rem; font-weight: 600; }
+
+/* ── PORTFOLIO ───────────────────────────────────────────── */
+#portfolio { background: var(--ivory); }
+.portfolio-header { margin-bottom: 4rem; }
+.portfolio-header h2 { color: var(--navy); margin-bottom: 1rem; }
+.portfolio-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+.portfolio-card {
+  background: var(--white); border-radius: 4px;
+  overflow: hidden; border: 1px solid rgba(0,0,0,0.06);
+  transition: var(--transition); cursor: pointer;
+}
+.portfolio-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); border-color: var(--gold); }
+.portfolio-card:first-child { grid-column: span 2; }
+.port-img {
+  background: var(--navy); height: 220px;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.portfolio-card:first-child .port-img { height: 280px; }
+.port-img-bg {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
+}
+.port-img-pattern {
+  position: absolute; inset: 0; opacity: 0.06;
+  background-image: repeating-linear-gradient(45deg, var(--gold) 0, var(--gold) 1px, transparent 0, transparent 50%);
+  background-size: 20px 20px;
+}
+.port-category {
+  position: absolute; top: 1rem; left: 1rem;
+  background: var(--gold); color: var(--navy);
+  font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.1em;
+  text-transform: uppercase; padding: 0.3rem 0.7rem; border-radius: 2px; font-weight: 500;
+}
+.port-logo {
+  position: relative; z-index: 1; text-align: center;
+}
+.port-logo-text { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: rgba(255,255,255,0.15); }
+.port-logo-name { font-family: var(--font-mono); font-size: 0.75rem; color: rgba(255,255,255,0.5); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.5rem; }
+.port-body { padding: 1.5rem; }
+.port-title { font-family: var(--font-display); font-size: 1.2rem; color: var(--navy); margin-bottom: 0.5rem; }
+.port-desc { font-size: 0.85rem; margin-bottom: 1rem; }
+.port-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.port-tag {
+  padding: 0.2rem 0.6rem; border: 1px solid rgba(11,31,58,0.12);
+  border-radius: 2px; font-size: 0.7rem; color: var(--mid);
+  font-family: var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase;
+}
+
+/* ── SHOP ────────────────────────────────────────────────── */
+#shop { background: var(--white); }
+.shop-header { text-align: center; margin-bottom: 1rem; }
+.shop-header h2 { color: var(--navy); margin-bottom: 1rem; }
+.shop-header p { max-width: 540px; margin: 0 auto 3rem; }
+.shop-tabs { display: flex; gap: 0; margin-bottom: 3rem; border-bottom: 2px solid var(--light); }
+.shop-tab {
+  padding: 0.75rem 1.5rem; font-size: 0.85rem; font-weight: 500;
+  color: var(--mid); cursor: pointer; border-bottom: 2px solid transparent;
+  margin-bottom: -2px; transition: var(--transition); white-space: nowrap;
+}
+.shop-tab.active { color: var(--navy); border-bottom-color: var(--gold); }
+.shop-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; }
+.product-card {
+  border: 1px solid rgba(0,0,0,0.08); border-radius: 4px;
+  overflow: hidden; transition: var(--transition); background: var(--white);
+}
+.product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--gold); }
+.product-cover {
+  background: var(--navy); padding: 2.5rem 2rem;
+  display: flex; flex-direction: column; align-items: flex-start;
+  position: relative; overflow: hidden; min-height: 200px; justify-content: flex-end;
+}
+.product-cover-bg {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, var(--navy) 0%, #162D4A 100%);
+}
+.product-cover-pattern {
+  position: absolute; right: -20px; top: -20px;
+  width: 140px; height: 140px;
+  border: 20px solid rgba(201,168,76,0.12); border-radius: 50%;
+}
+.product-cover-pattern2 {
+  position: absolute; right: 30px; top: 30px;
+  width: 80px; height: 80px;
+  border: 10px solid rgba(201,168,76,0.08); border-radius: 50%;
+}
+.product-badge {
+  position: absolute; top: 1rem; right: 1rem;
+  background: var(--gold); color: var(--navy);
+  font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.1em;
+  text-transform: uppercase; padding: 0.25rem 0.6rem; border-radius: 2px; font-weight: 600;
+}
+.product-cover-title {
+  position: relative; z-index: 1;
+  font-family: var(--font-display); font-size: 1.3rem; font-weight: 700;
+  color: var(--white); line-height: 1.2;
+}
+.product-cover-sub {
+  position: relative; z-index: 1;
+  font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.1em;
+  color: var(--gold); text-transform: uppercase; margin-top: 0.5rem;
+}
+.product-body { padding: 1.5rem; }
+.product-desc { font-size: 0.85rem; margin-bottom: 1.2rem; }
+.product-features { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.5rem; }
+.product-features li { font-size: 0.8rem; color: var(--mid); display: flex; align-items: center; gap: 0.5rem; }
+.product-features li::before { content: '✓'; color: var(--gold); font-weight: 700; }
+.product-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 1.2rem; border-top: 1px solid var(--light); }
+.product-price { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--navy); }
+.product-price .currency { font-size: 0.9rem; }
+.free-badge { background: var(--gold-pale); color: var(--gold); font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em; padding: 0.2rem 0.6rem; border-radius: 2px; text-transform: uppercase; }
+.btn-buy { padding: 0.65rem 1.5rem; font-size: 0.85rem; }
+
+/* ── BLOG PREVIEW ────────────────────────────────────────── */
+#blog { background: var(--ivory); }
+.blog-header { margin-bottom: 3rem; }
+.blog-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 2rem; }
+.blog-card { background: var(--white); border-radius: 4px; overflow: hidden; border: 1px solid rgba(0,0,0,0.06); transition: var(--transition); }
+.blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.blog-img { height: 200px; background: var(--navy); position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.blog-card:first-child .blog-img { height: 260px; }
+.blog-img-num { font-family: var(--font-display); font-size: 5rem; font-weight: 700; color: rgba(255,255,255,0.04); position: absolute; }
+.blog-cat {
+  position: absolute; top: 1rem; left: 1rem;
+  background: rgba(201,168,76,0.15); color: var(--gold);
+  font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.1em;
+  text-transform: uppercase; padding: 0.3rem 0.7rem; border-radius: 2px;
+  border: 1px solid rgba(201,168,76,0.3);
+}
+.blog-body { padding: 1.5rem; }
+.blog-date { font-family: var(--font-mono); font-size: 0.7rem; color: var(--mid); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.75rem; }
+.blog-title { font-family: var(--font-display); font-size: 1.15rem; color: var(--navy); margin-bottom: 0.75rem; line-height: 1.3; }
+.blog-card:first-child .blog-title { font-size: 1.4rem; }
+.blog-excerpt { font-size: 0.85rem; margin-bottom: 1rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.blog-read { font-size: 0.8rem; color: var(--gold); font-weight: 600; display: flex; align-items: center; gap: 0.4rem; transition: var(--transition); }
+.blog-read:hover { gap: 0.8rem; }
+
+/* ── TESTIMONIALS ────────────────────────────────────────── */
+.testimonials-section { background: var(--navy); padding: 7rem 0; }
+.testimonials-header { text-align: center; margin-bottom: 4rem; }
+.testimonials-header h2 { color: var(--white); margin-bottom: 1rem; }
+.testimonials-header p { color: rgba(255,255,255,0.45); max-width: 480px; margin: 0 auto; }
+.testimonials-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+.testimonial-card {
+  background: rgba(255,255,255,0.04); border: 1px solid var(--border);
+  border-radius: 4px; padding: 2rem; transition: var(--transition);
+}
+.testimonial-card:hover { background: rgba(255,255,255,0.07); border-color: rgba(201,168,76,0.4); }
+.testimonial-quote { font-size: 2.5rem; color: var(--gold); font-family: var(--font-display); line-height: 1; margin-bottom: 1rem; }
+.testimonial-text { font-size: 0.9rem; color: rgba(255,255,255,0.65); font-style: italic; margin-bottom: 1.5rem; line-height: 1.8; font-family: var(--font-display); }
+.testimonial-author { display: flex; align-items: center; gap: 1rem; }
+.testimonial-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; color: var(--navy); font-size: 1rem; flex-shrink: 0; }
+.testimonial-name { font-size: 0.9rem; font-weight: 600; color: var(--white); }
+.testimonial-role { font-size: 0.75rem; color: rgba(255,255,255,0.35); font-family: var(--font-mono); }
+
+/* ── LEAD MAGNET ─────────────────────────────────────────── */
+.lead-magnet {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
+  padding: 6rem 0; position: relative; overflow: hidden;
+}
+.lead-magnet::before {
+  content: ''; position: absolute; right: -100px; top: -100px;
+  width: 500px; height: 500px; border-radius: 50%;
+  border: 60px solid rgba(201,168,76,0.06);
+}
+.lead-magnet-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.lead-magnet-content h2 { color: var(--white); margin-bottom: 1rem; }
+.lead-magnet-content p { color: rgba(255,255,255,0.55); margin-bottom: 2rem; }
+.lead-form { display: flex; flex-direction: column; gap: 1rem; }
+.lead-form input {
+  background: rgba(255,255,255,0.08); border: 1px solid var(--border);
+  border-radius: 2px; padding: 0.9rem 1.2rem; color: var(--white);
+  font-family: var(--font-body); font-size: 0.9rem; outline: none;
+  transition: var(--transition);
+}
+.lead-form input::placeholder { color: rgba(255,255,255,0.25); }
+.lead-form input:focus { border-color: var(--gold); background: rgba(255,255,255,0.1); }
+.lead-form-note { font-size: 0.75rem; color: rgba(255,255,255,0.25); }
+.lead-magnet-visual { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.lm-item {
+  background: rgba(255,255,255,0.05); border: 1px solid var(--border);
+  border-radius: 4px; padding: 1.5rem; transition: var(--transition);
+}
+.lm-item:hover { background: rgba(255,255,255,0.08); border-color: rgba(201,168,76,0.4); }
+.lm-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+.lm-title { font-size: 0.85rem; font-weight: 600; color: var(--white); margin-bottom: 0.3rem; }
+.lm-desc { font-size: 0.78rem; color: rgba(255,255,255,0.4); }
+
+/* ── CONTACT ─────────────────────────────────────────────── */
+#contact { background: var(--ivory); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 6rem; align-items: start; }
+.contact-info h2 { color: var(--navy); margin-bottom: 1rem; }
+.contact-info p { margin-bottom: 2.5rem; }
+.contact-details { display: flex; flex-direction: column; gap: 1.2rem; margin-bottom: 2.5rem; }
+.contact-item { display: flex; align-items: flex-start; gap: 1rem; }
+.contact-icon { width: 44px; height: 44px; border-radius: 50%; background: var(--navy); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+.contact-item h4 { font-size: 0.8rem; font-family: var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.2rem; font-weight: 500; }
+.contact-item a, .contact-item p { font-size: 0.95rem; color: var(--dark); font-weight: 500; }
+.contact-socials { display: flex; gap: 0.75rem; }
+.social-btn {
+  padding: 0.6rem 1.2rem; border: 1px solid rgba(11,31,58,0.15);
+  border-radius: 2px; font-size: 0.78rem; font-family: var(--font-mono);
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--navy-2);
+  transition: var(--transition);
+}
+.social-btn:hover { border-color: var(--gold); color: var(--gold); }
+.contact-form { background: var(--white); border-radius: 4px; padding: 3rem; border: 1px solid rgba(0,0,0,0.06); }
+.contact-form h3 { font-family: var(--font-display); color: var(--navy); margin-bottom: 0.5rem; }
+.contact-form .form-sub { font-size: 0.85rem; margin-bottom: 2rem; }
+.form-group { margin-bottom: 1.2rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+.form-group label { display: block; font-size: 0.78rem; font-weight: 600; color: var(--navy); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.4rem; font-family: var(--font-mono); }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%; padding: 0.85rem 1.1rem;
+  border: 1px solid rgba(0,0,0,0.12); border-radius: 2px;
+  font-family: var(--font-body); font-size: 0.9rem; color: var(--dark);
+  background: var(--ivory); outline: none; transition: var(--transition);
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color: var(--gold); background: var(--white); }
+.form-group textarea { resize: vertical; min-height: 120px; }
+.form-group select { cursor: pointer; }
+
+/* ── FOOTER ──────────────────────────────────────────────── */
+footer { background: var(--navy); padding: 5rem 0 2rem; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 4rem; margin-bottom: 4rem; }
+.footer-brand {}
+.footer-logo { font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: var(--white); margin-bottom: 0.25rem; }
+.footer-logo span { color: var(--gold); }
+.footer-tagline { font-family: var(--font-display); font-size: 0.95rem; color: var(--gold); font-style: italic; margin-bottom: 1rem; }
+.footer-desc { font-size: 0.85rem; color: rgba(255,255,255,0.35); line-height: 1.8; max-width: 280px; }
+.footer-col h4 { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; font-weight: 500; }
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+.footer-links a { font-size: 0.85rem; color: rgba(255,255,255,0.45); transition: var(--transition); }
+.footer-links a:hover { color: var(--gold); }
+.footer-bottom { border-top: 1px solid var(--border); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; }
+.footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.25); }
+.footer-copy a { color: var(--gold); }
+.footer-bottom-links { display: flex; gap: 2rem; }
+.footer-bottom-links a { font-size: 0.78rem; color: rgba(255,255,255,0.25); transition: var(--transition); }
+.footer-bottom-links a:hover { color: var(--gold); }
+
+/* ── SCROLL TO TOP ───────────────────────────────────────── */
+.scroll-top {
+  position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
+  width: 44px; height: 44px; background: var(--gold); color: var(--navy);
+  border-radius: 2px; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: var(--transition); font-size: 1.1rem;
+  opacity: 0; pointer-events: none;
+}
+.scroll-top.visible { opacity: 1; pointer-events: auto; }
+.scroll-top:hover { transform: translateY(-3px); }
+
+/* ── MOBILE NAV OVERLAY ──────────────────────────────────── */
+.mobile-nav {
+  position: fixed; inset: 0; background: var(--navy); z-index: 2000;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 2rem; transform: translateX(100%); transition: transform 0.4s ease;
+}
+.mobile-nav.open { transform: translateX(0); }
+.mobile-nav a {
+  font-family: var(--font-display); font-size: 2rem; color: var(--white);
+  transition: var(--transition);
+}
+.mobile-nav a:hover { color: var(--gold); }
+.mobile-close {
+  position: absolute; top: 1.5rem; right: 2rem;
+  font-size: 1.5rem; color: var(--white); cursor: pointer;
+  background: none; border: none;
+}
+
+/* ── ANIMATIONS ─────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+@keyframes marquee {
+  from { transform: translateX(0); } to { transform: translateX(-50%); }
+}
+@keyframes bounce {
+  0%,100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-8px); }
+}
+.animate { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.animate.visible { opacity: 1; transform: translateY(0); }
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* ── RESPONSIVE ──────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .grid-2,.about-grid,.contact-grid,.lead-magnet-inner,.hero-content { grid-template-columns: 1fr; gap: 3rem; }
+  .grid-3,.service-tiers,.portfolio-grid,.shop-grid,.testimonials-grid,.blog-grid { grid-template-columns: 1fr 1fr; }
+  .grid-4,.stats-inner,.footer-grid { grid-template-columns: repeat(2,1fr); }
+  .hero-right { display: none; }
+  .hero-left { padding: 2rem 0; }
+  .portfolio-card:first-child { grid-column: span 2; }
+  .blog-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .nav-links,.nav-cta { display: none; }
+  .hamburger { display: flex; }
+  .grid-3,.service-tiers,.portfolio-grid,.shop-grid,.testimonials-grid,.blog-grid,.footer-grid { grid-template-columns: 1fr; }
+  .grid-4,.stats-inner { grid-template-columns: repeat(2,1fr); }
+  .portfolio-card:first-child,.blog-card:first-child { grid-column: span 1; }
+  .about-values { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .lead-magnet-visual { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+  .contact-socials { flex-wrap: wrap; }
+  h1 { font-size: 2.5rem; }
+  .section { padding: 5rem 0; }
+  .hero-stats { flex-wrap: wrap; gap: 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">KKD<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#blog">Insights</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary nav-cta">Book a Call</a>
+    <div class="hamburger" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" onclick="toggleMobileNav()">✕</button>
+  <a href="#home" onclick="toggleMobileNav()">Home</a>
+  <a href="#about" onclick="toggleMobileNav()">About</a>
+  <a href="#services" onclick="toggleMobileNav()">Services</a>
+  <a href="#portfolio" onclick="toggleMobileNav()">Portfolio</a>
+  <a href="#shop" onclick="toggleMobileNav()">Shop</a>
+  <a href="#blog" onclick="toggleMobileNav()">Insights</a>
+  <a href="#contact" onclick="toggleMobileNav()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <span class="label">Digital Communications & B2B Growth</span>
+      </div>
+      <h1 class="hero-name">Kelvin<br><em>Kwesi</em><br>Danquah</h1>
+      <p class="hero-role">B2B Growth Strategist &nbsp;·&nbsp; Ghana & South Africa &nbsp;·&nbsp; Global</p>
+      <p class="hero-tagline">"Driving B2B Growth in Africa & Beyond"</p>
+      <p class="hero-desc">I help CEOs, institutions, and decision-makers build powerful digital brands, generate qualified B2B leads, and grow revenue — through strategy built on 5+ years of real consulting experience.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Book a Discovery Call →</a>
+        <a href="#shop" class="btn btn-outline">View Digital Products</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num">5+</div>
+          <div class="hero-stat-label">Years Experience</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">10+</div>
+          <div class="hero-stat-label">Client Portfolios</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">2</div>
+          <div class="hero-stat-label">Countries</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">100+</div>
+          <div class="hero-stat-label">Articles Published</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-card">
+        <div class="hero-card-icon">🎯</div>
+        <h4>B2B Growth Strategy</h4>
+        <p>Full-funnel strategy from brand positioning to lead generation — built for your market.</p>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon">📈</div>
+        <h4>LinkedIn & Digital Brand</h4>
+        <p>Turn your LinkedIn presence into a 24/7 lead generation and credibility engine.</p>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon">📚</div>
+        <h4>Digital Products & Training</h4>
+        <p>Workbooks, toolkits, and advisory programmes built from real consulting experience.</p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <div class="marquee-item"><span>B2B Growth Strategy</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>Digital Communications</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>LinkedIn Growth</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>Lead Generation</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>Digital Brand Management</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>Customer Acquisition</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>Advisory & Training</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>Content Strategy</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>B2B Growth Strategy</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>Digital Communications</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>LinkedIn Growth</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>Lead Generation</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>Digital Brand Management</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>Customer Acquisition</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>Advisory & Training</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>Content Strategy</span><span class="marquee-dot"></span></div>
+  </div>
+</div>
+
+<!-- CLIENTS -->
+<div class="clients-section">
+  <div class="container">
+    <div class="clients-label">
+      <span class="label">Organisations & Clients I've Worked With</span>
+    </div>
+    <div class="clients-grid">
+      <div class="client-pill">Stratcomm Africa</div>
+      <div class="client-pill">Marleta Communications</div>
+      <div class="client-pill">Gwo Sevo</div>
+      <div class="client-pill">Agric Journalist</div>
+      <div class="client-pill">Ngusra Group</div>
+      <div class="client-pill">Global Compassion Network</div>
+      <div class="client-pill">Media General / 3FM 92.7</div>
+      <div class="client-pill">Accra Metropolitan Assembly</div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual animate">
+        <div class="about-img-frame">
+          <div class="about-img-placeholder">
+            <div class="about-monogram">KKD</div>
+            <div class="about-img-label">Add your photo here</div>
+          </div>
+        </div>
+        <div class="about-badge">
+          <div class="about-badge-num">5+</div>
+          <div class="about-badge-text">Years of<br>Experience</div>
+        </div>
+      </div>
+      <div class="about-content animate delay-1">
+        <span class="label">About Me</span>
+        <h2 style="color:var(--navy);margin:0.75rem 0 1.5rem;">The Strategist<br><em style="color:var(--gold);">Behind the Growth</em></h2>
+        <p class="about-intro">I am a Digital Communications & B2B Growth Strategist with 5+ years of hands-on experience helping businesses across Ghana, South Africa, and internationally grow their digital presence and win better clients.</p>
+        <p class="about-text">My work sits at the intersection of strategic communications, B2B marketing, and digital brand development. I have managed 10+ client portfolios simultaneously, led digital activations for West Africa's top communications firm, and published over 100 articles as a journalist and editor in the agricultural media space.</p>
+        <p class="about-text">I believe every business problem is, at its core, a communication problem — and that African businesses deserve world-class digital strategy built for their context, not borrowed from markets that look nothing like ours.</p>
+        <div class="about-values">
+          <div class="about-value animate delay-1">
+            <h4>Results First</h4>
+            <p>Every recommendation tied to measurable outcomes.</p>
+          </div>
+          <div class="about-value animate delay-2">
+            <h4>Radical Clarity</h4>
+            <p>No jargon. No fluff. Only what drives decisions.</p>
+          </div>
+          <div class="about-value animate delay-3">
+            <h4>African Excellence</h4>
+            <p>World-class strategy built for African markets.</p>
+          </div>
+          <div class="about-value animate delay-4">
+            <h4>Long-term Thinking</h4>
+            <p>Brands that compound in value over years, not weeks.</p>
+          </div>
+        </div>
+        <div class="credentials animate delay-2">
+          <div class="credential">
+            <div class="credential-icon">🎓</div>
+            <div class="credential-text">
+              <h4>MA Communication (Oil & Gas Management)</h4>
+              <p>University of Cape Coast, Ghana — 2020</p>
+            </div>
+          </div>
+          <div class="credential">
+            <div class="credential-icon">🏆</div>
+            <div class="credential-text">
+              <h4>SEO Fundamentals — SEMrush Academy</h4>
+              <p>Content Marketing & Digital Strategy Certification</p>
+            </div>
+          </div>
+          <div class="credential">
+            <div class="credential-icon">📜</div>
+            <div class="credential-text">
+              <h4>Fundamentals of Digital Marketing — Google</h4>
+              <p>Google Digital Academy Certification</p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:2.5rem;">
+          <a href="#contact" class="btn btn-dark">Work With Me →</a>
+          <a href="https://bit.ly/4pfMAyR" target="_blank" class="btn btn-gold-outline" style="margin-left:1rem;">View Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="services-header animate">
+      <span class="label">What I Offer</span>
+      <h2 style="margin:0.75rem 0 1rem;">Services Built for<br><em style="color:var(--gold);">Real Business Growth</em></h2>
+      <p>Three tiers of engagement — from self-guided digital products to full consulting partnerships. Every offer is built from real client work, not theory.</p>
+    </div>
+    <div class="service-tiers">
+      <div class="service-tier tier-1 animate delay-1">
+        <span class="tier-badge">Tier 1</span>
+        <h3>Digital Products</h3>
+        <p class="tier-desc">Self-paced resources built from real consulting experience. Apply immediately to your business.</p>
+        <ul class="service-list">
+          <li>Digital Marketing Strategy Workbooks</li>
+          <li>B2B Marketing Books & Guides</li>
+          <li>LinkedIn Growth Toolkits</li>
+          <li>Content Strategy Templates</li>
+          <li>Lead Generation Frameworks</li>
+        </ul>
+        <a href="#shop" class="btn btn-outline" style="width:100%;justify-content:center;">Browse Products →</a>
+        <div class="tier-price">From <strong>$9</strong> per product</div>
+      </div>
+      <div class="service-tier tier-2 animate delay-2">
+        <span class="tier-badge">Tier 2</span>
+        <h3>Advisory & Training</h3>
+        <p class="tier-desc">Strategy sessions, workshops, and speaking engagements tailored to your team and goals.</p>
+        <ul class="service-list">
+          <li>B2B LinkedIn Growth Strategy Sessions</li>
+          <li>Group Workshops — Digital Marketing & B2B</li>
+          <li>Digital Brand Audits & Recommendations</li>
+          <li>Speaking Engagements & Keynotes</li>
+          <li>Team Training Programmes</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;">Book a Session →</a>
+        <div class="tier-price">From <strong>[Your Rate]</strong> per session</div>
+      </div>
+      <div class="service-tier tier-3 animate delay-3">
+        <span class="tier-badge">Tier 3 — Premium</span>
+        <h3>Consulting & Retainer</h3>
+        <p class="tier-desc">Full strategic partnership for organisations serious about digital transformation and B2B growth.</p>
+        <ul class="service-list">
+          <li>1-on-1 B2B Growth Consulting</li>
+          <li>Digital Brand Management</li>
+          <li>Customer Acquisition & Lead Generation</li>
+          <li>Customer Retention Strategy</li>
+          <li>Digital Growth Partnerships</li>
+          <li>Fractional CMO / Advisory Board Roles</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Conversation →</a>
+        <div class="tier-price">Custom <strong>retainer</strong> or project fee</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-band">
+  <div class="container">
+    <div class="stats-inner">
+      <div class="stat-item animate">
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Years of Consulting Experience</div>
+      </div>
+      <div class="stat-item animate delay-1">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Client Portfolios Managed</div>
+      </div>
+      <div class="stat-item animate delay-2">
+        <div class="stat-num">100+</div>
+        <div class="stat-label">Articles Published</div>
+      </div>
+      <div class="stat-item animate delay-3">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Countries — Ghana & South Africa</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section">
+  <div class="container">
+    <div class="portfolio-header animate">
+      <span class="label">Selected Work</span>
+      <h2 style="color:var(--navy);margin:0.75rem 0 0.5rem;">Campaigns, Strategies<br><em style="color:var(--gold);">&amp; Results</em></h2>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-card animate">
+        <div class="port-img">
+          <div class="port-img-bg"></div>
+          <div class="port-img-pattern"></div>
+          <span class="port-category">Corporate Communications</span>
+          <div class="port-logo">
+            <div class="port-logo-text">SA</div>
+            <div class="port-logo-name">Stratcomm Africa</div>
+          </div>
+        </div>
+        <div class="port-body">
+          <h3 class="port-title">Multi-Client Digital Strategy & Activations</h3>
+          <p class="port-desc">Led digital marketing strategy for 5+ corporate and government clients as Principal Digital Communication Officer. Directed multi-platform activations across Facebook, Instagram, LinkedIn, and X — growing audience reach and engagement for every account managed.</p>
+          <div class="port-tags">
+            <span class="port-tag">Strategy</span>
+            <span class="port-tag">Social Media</span>
+            <span class="port-tag">Content</span>
+            <span class="port-tag">Paid Ads</span>
+            <span class="port-tag">Analytics</span>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card animate delay-1">
+        <div class="port-img">
+          <div class="port-img-bg" style="background:linear-gradient(135deg,#1A3A5C,#0B1F3A)"></div>
+          <div class="port-img-pattern"></div>
+          <span class="port-category">Remote Consulting</span>
+          <div class="port-logo">
+            <div class="port-logo-text">MC</div>
+            <div class="port-logo-name">Marleta Communications</div>
+          </div>
+        </div>
+        <div class="port-body">
+          <h3 class="port-title">B2B Paid Social Campaigns — South Africa</h3>
+          <p class="port-desc">Planned and executed paid social advertising on Meta and LinkedIn for South African clients. Delivered weekly analytics reports driving strategic pivots that improved CTR and reduced cost-per-lead.</p>
+          <div class="port-tags">
+            <span class="port-tag">Paid Social</span>
+            <span class="port-tag">Meta Ads</span>
+            <span class="port-tag">LinkedIn Ads</span>
+            <span class="port-tag">Analytics</span>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card animate delay-1">
+        <div class="port-img">
+          <div class="port-img-bg" style="background:linear-gradient(135deg,#0F3020,#1A5C3A)"></div>
+          <div class="port-img-pattern"></div>
+          <span class="port-category">Content & SEO</span>
+          <div class="port-logo">
+            <div class="port-logo-text">AJ</div>
+            <div class="port-logo-name">Agric Journalist</div>
+          </div>
+        </div>
+        <div class="port-body">
+          <h3 class="port-title">100+ Agricultural Articles & SEO Strategy</h3>
+          <p class="port-desc">Edited and published 100+ articles on Africa's agricultural sector. Built partnerships with agricultural institutions and managed SEO strategy, improving keyword rankings across niche agri-media search terms.</p>
+          <div class="port-tags">
+            <span class="port-tag">Editorial</span>
+            <span class="port-tag">SEO</span>
+            <span class="port-tag">Content</span>
+            <span class="port-tag">Partnerships</span>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card animate delay-2">
+        <div class="port-img">
+          <div class="port-img-bg" style="background:linear-gradient(135deg,#2E1A5C,#4A2E8C)"></div>
+          <div class="port-img-pattern"></div>
+          <span class="port-category">Brand & Social</span>
+          <div class="port-logo">
+            <div class="port-logo-text">NG</div>
+            <div class="port-logo-name">Ngusra Group</div>
+          </div>
+        </div>
+        <div class="port-body">
+          <h3 class="port-title">Multi-Brand Content Strategy & Lead Gen</h3>
+          <p class="port-desc">Created tailored content strategies for all group subsidiaries. Produced graphics and audiovisual content, generated leads through paid and organic campaigns, and grew the email subscriber base through monthly newsletters.</p>
+          <div class="port-tags">
+            <span class="port-tag">Content Strategy</span>
+            <span class="port-tag">Lead Gen</span>
+            <span class="port-tag">Email</span>
+            <span class="port-tag">Graphic Design</span>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card animate delay-3">
+        <div class="port-img">
+          <div class="port-img-bg" style="background:linear-gradient(135deg,#1A3A5C,#2E86AB)"></div>
+          <div class="port-img-pattern"></div>
+          <span class="port-category">Digital & SEO</span>
+          <div class="port-logo">
+            <div class="port-logo-text">GS</div>
+            <div class="port-logo-name">Gwo Sevo</div>
+          </div>
+        </div>
+        <div class="port-body">
+          <h3 class="port-title">Full-Funnel Digital Marketing Management</h3>
+          <p class="port-desc">Produced SEO-optimised copy, blogs, and email campaigns expanding organic search visibility. Executed lead generation campaigns combining paid ads, landing pages, and nurture sequences.</p>
+          <div class="port-tags">
+            <span class="port-tag">SEO</span>
+            <span class="port-tag">Email</span>
+            <span class="port-tag">Lead Gen</span>
+            <span class="port-tag">Copywriting</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:3rem;">
+      <a href="https://bit.ly/4pfMAyR" target="_blank" class="btn btn-dark">View Full Portfolio →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section id="shop" class="section">
+  <div class="container">
+    <div class="shop-header animate">
+      <span class="label">Digital Products & Books</span>
+      <h2 style="color:var(--navy);margin:0.75rem 0 1rem;">Everything I Use With<br><em style="color:var(--gold);">Paying Clients — Now Yours</em></h2>
+      <p>Workbooks, toolkits, guides, and books built from real consulting experience across Ghana and South Africa. Apply immediately to your business.</p>
+    </div>
+    <div class="shop-tabs">
+      <div class="shop-tab active" onclick="filterShop('all',this)">All Products</div>
+      <div class="shop-tab" onclick="filterShop('workbook',this)">Workbooks</div>
+      <div class="shop-tab" onclick="filterShop('toolkit',this)">Toolkits</div>
+      <div class="shop-tab" onclick="filterShop('book',this)">Books & Guides</div>
+      <div class="shop-tab" onclick="filterShop('free',this)">Free Resources</div>
+    </div>
+    <div class="shop-grid" id="shopGrid">
+
+      <div class="product-card animate" data-cat="workbook">
+        <div class="product-cover">
+          <div class="product-cover-bg"></div>
+          <div class="product-cover-pattern"></div>
+          <div class="product-cover-pattern2"></div>
+          <span class="product-badge">Best Seller</span>
+          <div class="product-cover-title">Digital Marketing Strategy Workbook</div>
+          <div class="product-cover-sub">2025 Edition · 8 Modules · 30+ Pages</div>
+        </div>
+        <div class="product-body">
+          <p class="product-desc">Your complete step-by-step guide to building a 90-day digital marketing strategy that drives real results — for any business, globally.</p>
+          <ul class="product-features">
+            <li>8 complete strategy modules</li>
+            <li>30+ worksheets & frameworks</li>
+            <li>90-day action plan template</li>
+            <li>Bonus: Sales page copy template</li>
+          </ul>
+          <div class="product-footer">
+            <div class="product-price"><span class="currency">$</span>15</div>
+            <a href="https://selar.co/[YOUR-PRODUCT-LINK]" target="_blank" class="btn btn-primary btn-buy">Buy on Selar →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate delay-1" data-cat="toolkit">
+        <div class="product-cover" style="background:linear-gradient(135deg,#1A3A5C,#2E86AB)">
+          <div class="product-cover-bg" style="background:linear-gradient(135deg,#1A3A5C,#2E86AB)"></div>
+          <div class="product-cover-pattern"></div>
+          <div class="product-cover-pattern2"></div>
+          <span class="product-badge">New</span>
+          <div class="product-cover-title">LinkedIn B2B Growth Toolkit</div>
+          <div class="product-cover-sub">Profile · Content · Outreach · Analytics</div>
+        </div>
+        <div class="product-body">
+          <p class="product-desc">Everything you need to turn LinkedIn into a B2B lead generation machine — from profile optimisation to outreach scripts and content templates.</p>
+          <ul class="product-features">
+            <li>LinkedIn profile optimisation guide</li>
+            <li>30-day content calendar template</li>
+            <li>Connection outreach scripts</li>
+            <li>Analytics tracking spreadsheet</li>
+          </ul>
+          <div class="product-footer">
+            <div class="product-price"><span class="currency">$</span>19</div>
+            <a href="https://selar.co/[YOUR-PRODUCT-LINK]" target="_blank" class="btn btn-primary btn-buy">Buy on Selar →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate delay-2" data-cat="book">
+        <div class="product-cover" style="background:linear-gradient(135deg,#2D1810,#5C3020)">
+          <div class="product-cover-bg" style="background:linear-gradient(135deg,#2D1810,#5C3020)"></div>
+          <div class="product-cover-pattern"></div>
+          <div class="product-cover-pattern2"></div>
+          <div class="product-cover-title">B2B Marketing for African Businesses</div>
+          <div class="product-cover-sub">The Definitive Guide · 2025</div>
+        </div>
+        <div class="product-body">
+          <p class="product-desc">A comprehensive guide to B2B marketing strategies that work in African markets — built on real experience across Ghana and South Africa.</p>
+          <ul class="product-features">
+            <li>B2B strategy frameworks for Africa</li>
+            <li>Lead generation systems</li>
+            <li>Client acquisition playbooks</li>
+            <li>Real case studies & examples</li>
+          </ul>
+          <div class="product-footer">
+            <div class="product-price"><span class="currency">$</span>25</div>
+            <a href="https://selar.co/[YOUR-PRODUCT-LINK]" target="_blank" class="btn btn-primary btn-buy">Buy on Selar →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate delay-1" data-cat="toolkit">
+        <div class="product-cover" style="background:linear-gradient(135deg,#0F3020,#1A6040)">
+          <div class="product-cover-bg" style="background:linear-gradient(135deg,#0F3020,#1A6040)"></div>
+          <div class="product-cover-pattern"></div>
+          <div class="product-cover-pattern2"></div>
+          <div class="product-cover-title">Content Strategy Template Pack</div>
+          <div class="product-cover-sub">15+ Templates · Plug & Play</div>
+        </div>
+        <div class="product-body">
+          <p class="product-desc">15+ ready-to-use content strategy templates — content calendars, pillar planners, performance trackers, and brief templates.</p>
+          <ul class="product-features">
+            <li>Monthly content calendar</li>
+            <li>Content pillar planner</li>
+            <li>Post performance tracker</li>
+            <li>Social media brief template</li>
+          </ul>
+          <div class="product-footer">
+            <div class="product-price"><span class="currency">$</span>12</div>
+            <a href="https://selar.co/[YOUR-PRODUCT-LINK]" target="_blank" class="btn btn-primary btn-buy">Buy on Selar →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate delay-2" data-cat="book">
+        <div class="product-cover" style="background:linear-gradient(135deg,#1A2A5C,#2E3A8C)">
+          <div class="product-cover-bg" style="background:linear-gradient(135deg,#1A2A5C,#2E3A8C)"></div>
+          <div class="product-cover-pattern"></div>
+          <div class="product-cover-pattern2"></div>
+          <div class="product-cover-title">Digital Brand Management Playbook</div>
+          <div class="product-cover-sub">For CEOs & Marketing Leaders</div>
+        </div>
+        <div class="product-body">
+          <p class="product-desc">A practical playbook for CEOs and senior leaders who want to take control of their digital brand without the agency price tag.</p>
+          <ul class="product-features">
+            <li>Brand audit framework</li>
+            <li>Digital positioning guide</li>
+            <li>Executive personal branding</li>
+            <li>Measurement & KPI guide</li>
+          </ul>
+          <div class="product-footer">
+            <div class="product-price"><span class="currency">$</span>20</div>
+            <a href="https://selar.co/[YOUR-PRODUCT-LINK]" target="_blank" class="btn btn-primary btn-buy">Buy on Selar →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate delay-3" data-cat="free">
+        <div class="product-cover" style="background:linear-gradient(135deg,#1A4A2A,#2E7A4A)">
+          <div class="product-cover-bg" style="background:linear-gradient(135deg,#1A4A2A,#2E7A4A)"></div>
+          <div class="product-cover-pattern"></div>
+          <div class="product-cover-pattern2"></div>
+          <span class="product-badge" style="background:rgba(255,255,255,0.15);color:#fff">FREE</span>
+          <div class="product-cover-title">B2B Digital Marketing Checklist 2025</div>
+          <div class="product-cover-sub">Instant Download · No Email Required</div>
+        </div>
+        <div class="product-body">
+          <p class="product-desc">The complete B2B digital marketing checklist for 2025. Foundation, content, lead generation, and measurement — all in one page.</p>
+          <ul class="product-features">
+            <li>Foundation checklist</li>
+            <li>Content strategy checklist</li>
+            <li>Lead generation checklist</li>
+            <li>Measurement framework</li>
+          </ul>
+          <div class="product-footer">
+            <div class="free-badge">Free Download</div>
+            <a href="https://selar.co/[YOUR-FREE-PRODUCT-LINK]" target="_blank" class="btn btn-dark btn-buy">Download Free →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:3rem;">
+      <a href="https://selar.co/[YOUR-STORE-LINK]" target="_blank" class="btn btn-dark">Visit My Full Store on Selar →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<div class="testimonials-section">
+  <div class="container">
+    <div class="testimonials-header animate">
+      <span class="label">Client Feedback</span>
+      <h2 style="margin:0.75rem 0 1rem;">What Clients<br><em style="color:var(--gold);">Say About Working With Me</em></h2>
+      <p>Results speak louder than promises. Here is what clients and colleagues say about the work.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card animate delay-1">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">Kelvin brought a level of strategic thinking to our digital campaigns that we had not experienced before. He does not just execute — he thinks about what the business is trying to achieve and builds the strategy around that. Our digital presence improved significantly within the first 90 days.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">CL</div>
+          <div>
+            <div class="testimonial-name">[Client Name]</div>
+            <div class="testimonial-role">CEO · [Company] · Ghana</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate delay-2">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">What sets Kelvin apart is his ability to simplify complex digital marketing concepts and translate them into actionable steps our team could actually implement. He is not just a consultant — he is a genuine partner in our growth.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MK</div>
+          <div>
+            <div class="testimonial-name">[Client Name]</div>
+            <div class="testimonial-role">Head of Marketing · [Company] · South Africa</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate delay-3">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">I purchased the Digital Marketing Strategy Workbook and it completely transformed how I approach marketing for my business. It is practical, specific, and built for the African market context — which makes all the difference.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AB</div>
+          <div>
+            <div class="testimonial-name">[Customer Name]</div>
+            <div class="testimonial-role">Business Owner · Ghana</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG -->
+<section id="blog" class="section">
+  <div class="container">
+    <div class="blog-header animate">
+      <span class="label">Insights & Articles</span>
+      <h2 style="color:var(--navy);margin:0.75rem 0 0.5rem;">B2B Growth Insights<br><em style="color:var(--gold);">for African Leaders</em></h2>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card animate">
+        <div class="blog-img">
+          <div class="blog-img-num">01</div>
+          <span class="blog-cat">Thought Leadership</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">Coming Soon · 2025</div>
+          <h3 class="blog-title">Why B2B Companies in Africa Are Losing Deals Before the First Meeting</h3>
+          <p class="blog-excerpt">Before a CEO responds to your pitch email, they Google you. Before a procurement team accepts your proposal, they check your LinkedIn. Here is what they find — and how to fix it.</p>
+          <a href="#blog" class="blog-read">Read Article →</a>
+        </div>
+      </div>
+      <div class="blog-card animate delay-1">
+        <div class="blog-img" style="background:linear-gradient(135deg,var(--navy-2),var(--navy))">
+          <div class="blog-img-num">02</div>
+          <span class="blog-cat">LinkedIn Strategy</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">Coming Soon · 2025</div>
+          <h3 class="blog-title">The 3-Part LinkedIn Formula That Generates B2B Leads Consistently</h3>
+          <p class="blog-excerpt">After analysing hundreds of high-performing B2B LinkedIn posts, I found a pattern. The posts that generate enquiries — not just likes — follow this exact structure.</p>
+          <a href="#blog" class="blog-read">Read Article →</a>
+        </div>
+      </div>
+      <div class="blog-card animate delay-2">
+        <div class="blog-img" style="background:linear-gradient(135deg,#1A3A5C,#2E86AB)">
+          <div class="blog-img-num">03</div>
+          <span class="blog-cat">Digital Strategy</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">Coming Soon · 2025</div>
+          <h3 class="blog-title">The Complete B2B Digital Marketing Checklist for African Businesses</h3>
+          <p class="blog-excerpt">Foundation, content, lead generation, and measurement — the baseline every B2B company in Africa needs to have in place before investing in growth campaigns.</p>
+          <a href="#blog" class="blog-read">Read Article →</a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:3rem;">
+      <a href="#blog" class="btn btn-dark">View All Articles →</a>
+    </div>
+  </div>
+</section>
+
+<!-- LEAD MAGNET -->
+<div class="lead-magnet">
+  <div class="container">
+    <div class="lead-magnet-inner">
+      <div class="lead-magnet-content animate">
+        <span class="label">Free Resource</span>
+        <h2 style="color:var(--white);margin:0.75rem 0 1rem;">Get the Free B2B Digital<br><em style="color:var(--gold);">Marketing Checklist</em></h2>
+        <p>The complete checklist I use to audit every client's digital presence before building their growth strategy. Foundation, content, lead generation, and measurement — all in one page. Free, instantly.</p>
+        <form class="lead-form" onsubmit="handleLeadForm(event)">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email Address" required>
+          <input type="text" placeholder="Your Business / Company">
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Me the Free Checklist →</button>
+          <p class="lead-form-note">No spam. No sales pitch. Just the checklist. Unsubscribe anytime.</p>
+        </form>
+      </div>
+      <div class="lead-magnet-visual animate delay-2">
+        <div class="lm-item">
+          <div class="lm-icon">✓</div>
+          <div class="lm-title">Foundation Checklist</div>
+          <div class="lm-desc">Positioning, LinkedIn, website, brand essentials</div>
+        </div>
+        <div class="lm-item">
+          <div class="lm-icon">📝</div>
+          <div class="lm-title">Content Checklist</div>
+          <div class="lm-desc">Calendar, pillars, formats, thought leadership</div>
+        </div>
+        <div class="lm-item">
+          <div class="lm-icon">🎯</div>
+          <div class="lm-title">Lead Gen Checklist</div>
+          <div class="lm-desc">Lead magnet, email capture, outreach system</div>
+        </div>
+        <div class="lm-item">
+          <div class="lm-icon">📊</div>
+          <div class="lm-title">Measurement Checklist</div>
+          <div class="lm-desc">Analytics, KPIs, monthly review process</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info animate">
+        <span class="label">Get in Touch</span>
+        <h2 style="color:var(--navy);margin:0.75rem 0 1rem;">Let's Build Something<br><em style="color:var(--gold);">Great Together</em></h2>
+        <p>Whether you are a CEO looking for a B2B growth partner, a business ready to transform your digital presence, or a professional interested in my digital products — I would love to hear from you.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon">✉</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:kelvinkwesidanquah.co@gmail.com">kelvinkwesidanquah.co@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Phone / WhatsApp</h4>
+              <a href="tel:+233248878765">+233 24 887 8765</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🌍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Accra, Ghana · South Africa · Remote / Global</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🌐</div>
+            <div>
+              <h4>Website</h4>
+              <a href="https://www.kelvinkwesidanquah.com">www.kelvinkwesidanquah.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/kelvin-kwesi-danquah/" target="_blank" class="social-btn">LinkedIn</a>
+          <a href="https://bit.ly/4pfMAyR" target="_blank" class="social-btn">Portfolio</a>
+          <a href="https://selar.co/[YOUR-STORE]" target="_blank" class="social-btn">Selar Store</a>
+        </div>
+      </div>
+      <div class="contact-form animate delay-2">
+        <h3>Send a Message</h3>
+        <p class="form-sub">I respond to all enquiries within 24 hours on business days.</p>
+        <form onsubmit="handleContactForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" placeholder="Your first name" required>
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" placeholder="Your last name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>Company / Organisation</label>
+            <input type="text" placeholder="Your company name">
+          </div>
+          <div class="form-group">
+            <label>What are you enquiring about? *</label>
+            <select required>
+              <option value="">Select an option</option>
+              <option>B2B Growth Consulting (Retainer / Project)</option>
+              <option>Advisory & Strategy Session</option>
+              <option>Group Training / Workshop</option>
+              <option>Speaking Engagement</option>
+              <option>Digital Products / Books</option>
+              <option>Partnership Opportunity</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Your Message *</label>
+            <textarea placeholder="Tell me about your business, your goals, and how I can help..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:1rem;">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Kelvin Kwesi <span>Danquah</span></div>
+        <div class="footer-tagline">Driving B2B Growth in Africa & Beyond</div>
+        <p class="footer-desc">Digital Communications & B2B Growth Strategist helping CEOs and businesses across Africa and beyond build powerful digital brands and grow revenue.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">B2B Growth Consulting</a></li>
+          <li><a href="#services">Digital Brand Management</a></li>
+          <li><a href="#services">LinkedIn Growth Strategy</a></li>
+          <li><a href="#services">Lead Generation</a></li>
+          <li><a href="#services">Advisory & Training</a></li>
+          <li><a href="#services">Speaking Engagements</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Digital Products</h4>
+        <ul class="footer-links">
+          <li><a href="#shop">Strategy Workbook</a></li>
+          <li><a href="#shop">LinkedIn Growth Toolkit</a></li>
+          <li><a href="#shop">B2B Marketing Guide</a></li>
+          <li><a href="#shop">Content Templates</a></li>
+          <li><a href="#shop">Free Checklist</a></li>
+          <li><a href="https://selar.co/[YOUR-STORE]" target="_blank">Visit Selar Store</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About Kelvin</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#blog">Insights & Blog</a></li>
+          <li><a href="https://www.linkedin.com/in/kelvin-kwesi-danquah/" target="_blank">LinkedIn</a></li>
+          <li><a href="mailto:kelvinkwesidanquah.co@gmail.com">Email Me</a></li>
+          <li><a href="#contact">Book a Discovery Call</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 <a href="#home">Kelvin Kwesi Danquah</a>. All rights reserved. | <a href="https://www.kelvinkwesidanquah.com">kelvinkwesidanquah.com</a></div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<div class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+
+<script>
+// ── SCROLL ANIMATIONS ──────────────────────────────────────
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.12 });
+document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+
+// ── SCROLL TO TOP ──────────────────────────────────────────
+window.addEventListener('scroll', () => {
+  const st = document.getElementById('scrollTop');
+  if (window.scrollY > 400) st.classList.add('visible');
+  else st.classList.remove('visible');
+});
+
+// ── MOBILE NAV ─────────────────────────────────────────────
+function toggleMobileNav() {
+  document.getElementById('mobileNav').classList.toggle('open');
+}
+
+// ── SHOP FILTER ────────────────────────────────────────────
+function filterShop(cat, tab) {
+  document.querySelectorAll('.shop-tab').forEach(t => t.classList.remove('active'));
+  tab.classList.add('active');
+  document.querySelectorAll('.product-card').forEach(card => {
+    if (cat === 'all' || card.dataset.cat === cat) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+// ── FORMS ──────────────────────────────────────────────────
+function handleLeadForm(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('button');
+  btn.textContent = 'Sending...';
+  setTimeout(() => {
+    btn.textContent = '✓ Check your email!';
+    btn.style.background = '#1A7A4A';
+    e.target.reset();
+    // Replace with your email service (Mailchimp, ConvertKit, etc.)
+    alert('Thank you! The free checklist has been sent to your email. Please check your inbox.');
+  }, 1000);
+}
+
+function handleContactForm(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('button');
+  btn.textContent = 'Sending...';
+  setTimeout(() => {
+    btn.textContent = '✓ Message Sent!';
+    btn.style.background = '#1A7A4A';
+    e.target.reset();
+    alert('Thank you for your message! I will respond within 24 hours on business days.');
+  }, 1000);
+}
+
+// ── NAV ACTIVE STATE ───────────────────────────────────────
+const sections = document.querySelectorAll('section[id], div[id="home"]');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id');
+  });
+  navLinks.forEach(a => {
+    a.style.color = a.getAttribute('href') === '#' + current ? 'var(--gold)' : '';
+  });
+});
+</script>
+</body>
+</html>
